@@ -14,7 +14,7 @@ df.columns = df.iloc[0]
 df = df[1:]
 df = df.reset_index(drop=True)
 
-# Group the DataFrame by 'Artist' and sum the 'Total' values n
+# Group the DataFrame by 'Artist' and sum the 'Total' values
 artist_totals = df.groupby('Artist')['Total'].sum().reset_index()
 
 # Sort the DataFrame by 'Artist' in ascending order
